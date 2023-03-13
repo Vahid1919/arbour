@@ -1,0 +1,14 @@
+.nav{
+    /* background-color: var(--light-green); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1em;
+    height: 3em;
+    
+    
+    font-weight: 700;
+    font-size: xx-large;
+   
+}
+
