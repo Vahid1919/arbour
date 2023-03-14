@@ -24,7 +24,6 @@
 
 .text_current{
     color: var(--dark-green);
-    border-bottom: 2px solid var(--dark-green);
 }
 
 .nav_icon{
