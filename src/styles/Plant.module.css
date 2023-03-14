@@ -1,0 +1,13 @@
+.main{
+   
+
+    width: 100vw;
+    height: calc(100vh - 9vh);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;    
+    margin-top: 1em;
+    gap: 1em;
+    overflow-y: scroll;
+}

@@ -1,10 +1,10 @@
-import Nav from "../../../../components/Nav"
+import Header from "../../../../components/Header"
 import Signup from "../../../../components/Signup"
 
 const index = () => {
   return (
     <div>
-        <Nav/>
+        <Header/>
         <Signup/>
     </div>
   )

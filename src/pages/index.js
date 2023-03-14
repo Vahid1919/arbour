@@ -1,4 +1,4 @@
-import Nav from "../../components/Nav"
+import Nav from "../../components/Header"
 import Login from "../../components/Login"
 import Signup from "../../components/Signup"
 
