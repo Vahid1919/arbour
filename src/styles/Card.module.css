@@ -65,3 +65,17 @@
     color: var(--white);
     font-weight: 800;
 }
+
+.svg{
+    height: 1em;
+    margin-right: 0.4em;
+    
+    fill: var(--dark-green);
+}
+
+.token_value_container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}

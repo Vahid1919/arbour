@@ -1,0 +1,58 @@
+.main{
+    width: 100vw;
+    height: calc(100vh - 25vh);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    
+    gap: 1em;
+    margin-top: 1em;
+
+    overflow-y: scroll;
+}
+
+.description{
+    padding: 0 2em;
+
+}
+
+.text{
+    padding-left: 2em;
+}
+
+.image{
+    height: auto;
+    width: 50%;
+    border-radius: 5px;
+    align-self: center;
+
+}
+
+.buttons_flex{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ margin-bottom: 2em;
+
+}
+
+.button_approve, .button_reject{
+    
+    margin-right: 0.7em;
+    height: 3em;
+    width: max-content;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 300;
+}
+
+.button_approve{
+    background-color: var(--dark-green);
+}
+
+.button_reject{
+    background-color: var(--red);
+}

@@ -1,0 +1,30 @@
+.title{
+    padding: 1em;
+}
+
+.steps{
+    padding: 0 2em;
+}
+
+.steps_flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    
+}
+
+.camera_button{
+    background-color: var(--light-green);
+    height: 5em;
+    width: 5em;
+    align-self: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.svg{
+    height: 3em;
+    width: 3em;
+    background-color: var(--light-green);
+    fill: var(--black);
+}

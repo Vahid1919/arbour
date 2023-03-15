@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   
-  --black: #333333;
+  --black: #222222;
   --white: #EBEBEB;
   --red: #DA2C38;
   --light-green: #A4C2A5;
@@ -16,6 +16,8 @@
 
 
   font-family: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
 
-  overflow: hidden;
+  
+
 }

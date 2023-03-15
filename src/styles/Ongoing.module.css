@@ -1,14 +1,28 @@
 .main{
-   
-
     width: 100vw;
     height: calc(100vh - 18vh);
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;    
-    margin-top: 1em;
+    margin: 1em 0;
     gap: 1em;
     overflow-y: scroll;
     padding-bottom: 20em;
+
+}
+
+.buttons_flex{
+    display: flex;
+    gap: 4em;
+    position: relative;
+}
+
+
+.radio{
+    margin-right: 0.4em;
+}
+
+.text{
+    font-weight: 400;
 }

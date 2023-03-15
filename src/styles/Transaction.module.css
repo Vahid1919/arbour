@@ -1,0 +1,63 @@
+.main{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    height: 50%;
+    width: 80%;
+    border: 2px solid grey; 
+    border-radius: 5px;
+    background-color: var(--light-green);
+}
+
+.title{
+    padding: 0.5em;
+    background-color: var(--light-green);
+}
+
+.amount{
+    padding:  0 0.5em;
+    font-size: large;
+    background-color: var(--light-green);
+}
+
+.payement_flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    background-color: var(--light-green);
+    
+}
+
+.inner_flex{
+    display: flex;
+    height: max-content;
+    align-items: center;
+    background-color: var(--light-green);
+}
+
+.number{
+    height: 3em;
+    width: 13em;
+    border-radius: 5px;
+    
+    padding-left: 1em;
+    font-weight: 100;
+    
+    
+}
+
+.button{
+    margin-right: 0.7em;
+    height: 3em;
+    width: 8em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 400;
+    align-self: center;
+}

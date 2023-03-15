@@ -1,5 +1,5 @@
 import styles from "@/styles/Plant.module.css"
-import Card from "./Card"
+import Card from "../Card"
 
 
 const PlantComponent = () => {
@@ -8,6 +8,9 @@ const PlantComponent = () => {
         <Card/>
         <Card/>
         <Card/>
+       
+        
+
     </div>
   )
 }

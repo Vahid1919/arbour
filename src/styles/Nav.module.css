@@ -3,16 +3,17 @@
     flex-direction: row;
 
     justify-content: space-around;
-    align-items: end;
+    align-items: flex-end;
 
-    position: absolute;
+    position:absolute;
     bottom: 0;
+
 
     width: 100vw;
     height: 7em;
 
     font-size: small;
-
+    scroll-padding-bottom: 20em;
 
     background-color: var(--white);
 

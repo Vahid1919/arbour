@@ -1,0 +1,32 @@
+.main{
+    width: 100vw;
+    height: calc(100vh - 25vh);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;    
+    margin-top: 1em;
+    gap: 3em;
+}
+
+.button{
+    
+  
+    margin-right: 0.7em;
+    height: 3em;
+    width: 8em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 800;
+    font-size: large;
+}
+
+.select{
+    height: 3em;
+    width: 15em;
+    margin-left: 2em;
+    padding-left: 1em;
+    font-weight: 100;
+}
