@@ -7,7 +7,10 @@ This repository contains my project for my Web Application Development class.
 ### Phase 2 - Frontend
     Completed HTML And CSS files 
     
-
+# How to Run this Project
+1. Go to root directory
+2. Run 'npm install'
+3. Run 'npm run dev'
 
 # Hosted on Vercel
  - https://arbour.vercel.app/
