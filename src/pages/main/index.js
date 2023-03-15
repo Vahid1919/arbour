@@ -12,7 +12,7 @@ import Notification from "../../../components/Notification";
 const index = () => {
 
   let pages = ['Plant', 'Sponsor', "Map", "Ongoing", "Profile"]
-  const [currentPage, setCurrentPage] = useState("Plant")
+  const [currentPage, setCurrentPage] = useState("Ongoing")
   
   const changePage = (newPage) => {
     if(pages.includes(newPage) && currentPage != newPage){
