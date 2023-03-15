@@ -29,4 +29,7 @@
     margin-left: 2em;
     padding-left: 1em;
     font-weight: 100;
+    border: 2px solid grey;
+    border-radius: 5px;
+
 }

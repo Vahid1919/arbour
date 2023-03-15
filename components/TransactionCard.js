@@ -1,6 +1,6 @@
 import styles from "@/styles/Transaction.module.css"
 
-const TransactionCard = () => {
+const TransactionCard = ({transactionStart, setTransactionStart}) => {
   return (
     <div className={styles.main}>
         <h1 className={styles.title}>Buy Leaf</h1>
@@ -10,7 +10,7 @@ const TransactionCard = () => {
                 <input className={styles.number} type="number" />
             </div>
 
-            <button className={styles.button}>Buy</button>
+            <button onClick={() => {setTransactionStart(!transactionStart)}} className={styles.button}>Buy</button>
             
 
         </span> 

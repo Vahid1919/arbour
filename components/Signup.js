@@ -1,4 +1,5 @@
 import styles from "@/styles/Signup.module.css"
+import Link from "next/link"
 
 const Signup = () => {
   return (
@@ -13,9 +14,10 @@ const Signup = () => {
             <input className={styles.secondary} placeholder="Email" type="email" name="email" id="" />
             <input className={styles.secondary} placeholder="Password" type="password" name="" id="" />
 
-            <input className={styles.submit} type="submit" value="Sign Up" />
+            <Link className={styles.link} href="/main"><input className={styles.submit} type="submit" value="Submit" /></Link>
+  
             
-            <span className={styles.to_login}>Already have an account? <a className={styles.link} href="http://">Login</a></span>
+            <span className={styles.to_login}>Already have an account? <Link className={styles.link} href="/auth/login">Login</Link></span>
         </form>
     
     </>

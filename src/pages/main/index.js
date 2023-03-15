@@ -12,7 +12,7 @@ import Notification from "../../../components/Notification";
 const index = () => {
 
   let pages = ['Plant', 'Sponsor', "Map", "Ongoing", "Profile"]
-  const [currentPage, setCurrentPage] = useState("Ongoing")
+  const [currentPage, setCurrentPage] = useState("Plant")
   
   const changePage = (newPage) => {
     if(pages.includes(newPage) && currentPage != newPage){
@@ -25,13 +25,15 @@ const index = () => {
   return (
     <div>
         <Header page="Arbour"/>
-        <Ongoing/>
-        {/* <Plant/> */}
-        {/* <Sponsor/>
-        <Map/>
-        <Profile/> */}
-        <Nav currentPage={currentPage}/>
-        <Notification/>
+        
+        {(currentPage ==="Plant") ? <Plant/> : <></>}
+        {(currentPage ==="Sponsor") ? <Sponsor/> : <></>}
+        {(currentPage ==="Ongoing") ? <Ongoing/> : <></>}
+        {(currentPage ==="Map") ? <Map/> : <></>}
+        {(currentPage ==="Profile") ? <Profile/> : <></>}
+          
+        <Nav currentPage={currentPage} setCurrentPage = {setCurrentPage}/>
+        {/* <Notification/> */}
     </div>
   )
 }

@@ -25,6 +25,7 @@
 
 .text_current{
     color: var(--dark-green);
+    border-bottom: 2px solid var(--dark-green);
 }
 
 .nav_icon{
@@ -48,6 +49,7 @@
 
 .svg_current{
     fill: var(--dark-green); 
+    
 }
 
 .button_container{

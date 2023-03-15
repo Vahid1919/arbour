@@ -19,7 +19,7 @@ const index = () => {
                 <p className={styles.steps}><b>Step 4:</b> Wait for verification; <b>Get Paid</b> </p>
             </section>
 
-            <Nav currentPage="Plant" />
+            <Nav />
         </div>
     )
 }

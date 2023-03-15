@@ -1,4 +1,5 @@
 import styles from "@/styles/Card.module.css"
+import Link from 'next/link'
 
 const Card = ({buttonText = "Plant"}) => {
   return (
@@ -17,7 +18,9 @@ const Card = ({buttonText = "Plant"}) => {
 
                   50
                   </span>
-                <button className={styles.button}>{buttonText}</button>
+                  <Link className={styles.link} href="/start-plant"><button className={styles.button}>{buttonText}</button></Link>
+
+                
             </div>
         </div>
 
