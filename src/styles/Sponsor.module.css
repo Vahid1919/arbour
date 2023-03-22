@@ -23,6 +23,13 @@
     font-size: large;
 }
 
+.button:hover{
+
+    background-color: var(--dark-green);
+    color: var(--white);
+
+}
+
 .select{
     height: 3em;
     width: 15em;
@@ -32,4 +39,20 @@
     border: 2px solid grey;
     border-radius: 5px;
 
+}
+
+@media (min-width: 600px) {
+    .select{
+      
+        width: 40vw;
+        font-size: large;
+        
+    
+    }
+
+    .label{
+  
+        font-size: x-large;
+    }
+    
 }

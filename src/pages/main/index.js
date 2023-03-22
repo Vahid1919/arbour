@@ -3,16 +3,19 @@ import Nav from "../../../components/Nav"
 import { useState } from 'react';
 import Plant from "../../../components/dashboards/Plant";
 import Sponsor from "../../../components/dashboards/Sponsor";
-import Map from "../../../components/dashboards/Map";
+import MapView from "../../../components/dashboards/MapView";
 import Profile from "../../../components/dashboards/Profile";
 import Ongoing from "../../../components/dashboards/Ongoing";
 import Notification from "../../../components/Notification";
+import { useRouter } from 'next/router';
 
 
-const index = () => {
+const index = (props) => {
+  // console.log(props.router.query.page)
 
-  let pages = ['Plant', 'Sponsor', "Map", "Ongoing", "Profile"]
-  const [currentPage, setCurrentPage] = useState("Ongoing")
+
+  let pages = ['Plant', 'Sponsor', "MapView", "Ongoing", "Profile"]
+  const [currentPage, setCurrentPage] = useState("Plant")
   
   const changePage = (newPage) => {
     if(pages.includes(newPage) && currentPage != newPage){
@@ -29,7 +32,7 @@ const index = () => {
         {(currentPage ==="Plant") ? <Plant/> : <></>}
         {(currentPage ==="Sponsor") ? <Sponsor/> : <></>}
         {(currentPage ==="Ongoing") ? <Ongoing/> : <></>}
-        {(currentPage ==="Map") ? <Map/> : <></>}
+        {(currentPage ==="MapView") ? <MapView/> : <></>}
         {(currentPage ==="Profile") ? <Profile/> : <></>}
           
         <Nav currentPage={currentPage} setCurrentPage = {setCurrentPage}/>

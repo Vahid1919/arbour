@@ -1,5 +1,5 @@
 import styles from "@/styles/Header.module.css"
-import Signup from "./Signup"
+import Signup from "./auth/Signup"
 
 const Nav = ( {page = "Arbour"}) => {
     return (

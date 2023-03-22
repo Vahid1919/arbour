@@ -9,6 +9,20 @@
     align-items: center;    
     margin-top: 1em;
     gap: 1em;
-    overflow-y: scroll;
-    padding-bottom: 20em;
+    padding-bottom: 7em;
+    overflow: scroll;
+    
+}
+
+
+@media (min-width: 600px) {
+    .main{
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: space-evenly;
+        
+
+    }
+    
 }

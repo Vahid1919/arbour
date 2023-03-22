@@ -13,9 +13,9 @@
     height: 7em;
 
     font-size: small;
-    scroll-padding-bottom: 20em;
 
     background-color: var(--white);
+  
 
 }
 
@@ -66,4 +66,13 @@
     width: 15vw;
     height: 12vh;
 
+}
+
+@media (min-width: 600px){
+    .nav{
+       
+        height: 10em;
+    
+    
+    }
 }

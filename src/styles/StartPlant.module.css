@@ -28,3 +28,13 @@
     background-color: var(--light-green);
     fill: var(--black);
 }
+
+@media (min-width: 600px){
+    .camera_button{
+        
+        height: 5em;
+        width: 5em;
+        align-self: flex-start;
+        margin-left: 7%;
+    }
+}

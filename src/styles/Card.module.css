@@ -11,13 +11,12 @@
 
     border-bottom: 1px solid rgb(195, 195, 195);
     
-    
 }
 
 .tree_img{
     width: 30%;
     height: auto;
-    object-fit: fill;
+    object-fit: cover;
     margin: 0.7em;
     border-radius: 5px;
 }
@@ -66,6 +65,13 @@
     font-weight: 800;
 }
 
+.button:hover{
+
+    background-color: var(--dark-green);
+    color: var(--white);
+
+}
+
 .svg{
     height: 1em;
     margin-right: 0.4em;
@@ -77,5 +83,18 @@
     display: flex;
     height: 100%;
     align-items: center;
+}
 
+@media (min-width: 600px) {
+    .button{
+        
+        height: 4em;
+        width: 10em;
+        
+    }
+
+    .card_container{
+        width: 40vw;
+    }
+    
 }

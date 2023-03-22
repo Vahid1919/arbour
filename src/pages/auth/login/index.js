@@ -1,5 +1,5 @@
 import Header from "../../../../components/Header"
-import Login from "../../../../components/Login"
+import Login from "../../../../components/auth/Login"
 
 const index = () => {
   return (

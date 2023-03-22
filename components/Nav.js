@@ -10,7 +10,10 @@ const Nav = ({currentPage = undefined, setCurrentPage = undefined}) => {
         
         <button onClick={() => {
             if(setCurrentPage === undefined){
-                router.push('/main')
+                router.push({
+                    pathname: '/main',
+                    query: { page: 'Plant' }
+                })
                 return
             }
             setCurrentPage("Plant")
@@ -27,7 +30,10 @@ const Nav = ({currentPage = undefined, setCurrentPage = undefined}) => {
 
         <button onClick={() => {
             if(setCurrentPage === undefined){
-                router.push('/main')
+                router.push({
+                    pathname: '/main',
+                    query: { page: 'Sponsor' }
+                })
                 return
             }
             setCurrentPage("Sponsor")
@@ -44,7 +50,10 @@ const Nav = ({currentPage = undefined, setCurrentPage = undefined}) => {
 
         <button onClick={() => {
             if(setCurrentPage === undefined){
-                router.push('/main')
+                router.push({
+                    pathname: '/main',
+                    query: { page: 'Ongoing' }
+                })
                 return
             }
             setCurrentPage("Ongoing")
@@ -62,23 +71,29 @@ const Nav = ({currentPage = undefined, setCurrentPage = undefined}) => {
 
         <button onClick={() => {
             if(setCurrentPage === undefined){
-                router.push('/main')
+                router.push({
+                    pathname: '/main',
+                    query: { page: 'MapView' }
+                })
                 return
             }
-            setCurrentPage("Map")
+            setCurrentPage("MapView")
         
         }
             } className={styles.button_container}>
 
             <div className={styles.nav_icon_two}>
-            <svg className={currentPage == "Map" ? styles.svg_current : styles.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M384 476.1L192 421.2V35.9L384 90.8V476.1zm32-1.2V88.4L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3V394.6c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2V423.6L32.9 474.5C17.1 480.8 0 469.2 0 452.2V117.4c0-9.8 6-18.6 15.1-22.3z"/></svg>                  </div>
+            <svg className={currentPage == "MapView" ? styles.svg_current : styles.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M384 476.1L192 421.2V35.9L384 90.8V476.1zm32-1.2V88.4L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3V394.6c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2V423.6L32.9 474.5C17.1 480.8 0 469.2 0 452.2V117.4c0-9.8 6-18.6 15.1-22.3z"/></svg>                  </div>
 
-            <span className={currentPage == "Map" ? styles.text_current : styles.text}>Map</span>
+            <span className={currentPage == "MapView" ? styles.text_current : styles.text}>Map</span>
         </button>
 
         <button onClick={() => {
             if(setCurrentPage === undefined){
-                router.push('/main');
+                router.push({
+                    pathname: '/main',
+                    query: { page: 'Profile' }
+                })
             }
             setCurrentPage("Profile")
         

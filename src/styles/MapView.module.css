@@ -1,0 +1,100 @@
+.main{
+    width: 100vw;
+    height: calc(100vh - 25vh);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;    
+    margin-top: 1em;
+    text-align: left;
+
+    gap: 1em; 
+}
+
+.description{
+    padding: 0 1em; 
+    font-weight: 400;
+    font-size: medium;
+}
+
+
+
+.button{
+    
+    margin-right: 0.7em;
+    height: 2em;
+    width: 6em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 400;
+    font-size: small;
+}
+
+.buttons_flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+   
+    
+}
+
+.filter{
+    padding-right: 1em;
+}
+
+.map{
+    display: inline-flex;
+    height: 65vh;
+    width: 95vw;
+  
+    /* justify-content: center; */
+
+}
+
+@media (min-width: 600px){
+    .description{
+        padding: 0 3em; 
+        font-weight: 400;
+        font-size: medium;
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .button{
+    
+        height: 3em;
+        width: 7em;
+       
+        font-weight: 400;
+        font-size: medium;
+     
+    }
+
+    .button:hover{
+
+        background-color: var(--dark-green);
+        color: var(--white);
+    
+    }
+
+    .buttons_flex{
+        display: flex;
+        
+        flex-direction: row;
+        
+        padding: 0 4em; 
+        align-self: flex-start;
+    }
+
+    .map{
+       
+        width: 80vw;
+       
+    }
+}
+
+@import url('https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps.css');
+

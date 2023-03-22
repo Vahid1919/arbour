@@ -8,6 +8,15 @@ const PlantComponent = () => {
         <Card/>
         <Card/>
         <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
        
         
 
