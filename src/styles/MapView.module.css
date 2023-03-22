@@ -46,11 +46,9 @@
 }
 
 .map{
-    display: inline-flex;
+
     height: 65vh;
     width: 95vw;
-  
-    /* justify-content: center; */
 
 }
 
