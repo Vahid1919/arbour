@@ -1,5 +1,14 @@
+.background{
+    position: absolute;
+    inset: 0;
+    background-color: rgb(21, 21, 21);
+    z-index: 1;
+    filter: opacity(40%);
+}
+
 .main{
     position: absolute;
+    z-index: 100;
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
@@ -10,6 +19,7 @@
     border-radius: 5px;
     background-color: var(--light-green);
 }
+
 
 .title{
     padding: 0.5em;

@@ -1,20 +1,21 @@
 .main{
-    width: 100vw;
+    width: 100%;
+    height: calc(100vh - 18vh);
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;    
-    margin: 1em 0;
+    margin-top: 1em;
     gap: 1em;
-    padding-bottom: 7em;
-
+    padding-bottom: 5em;
+    /* overflow: scroll; */
 }
 
 .inherited_main{
    
 
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
@@ -22,22 +23,22 @@
     margin-top: 1em;
     gap: 1em;
     overflow-y: scroll;
-    padding-bottom: 7em;
-    
 }
 
 
 .buttons_flex{
     display: flex;
-    gap: 4em;
+    height: 1em;
+    /* gap: 2em; */
     position: relative;
 }
 
 
 .radio{
     margin-right: 0.4em;
-    height: 1.3em;
-    width: 1.3em;
+    
+    height: 1.5em;
+    width: 1.5em;
     appearance: none;
     /* Safari support */
     -webkit-appearance: none;
@@ -69,8 +70,11 @@
 
 .radio_container{
     display: flex;
+    height: 3em;
+    width: 10em;
     justify-content: center;
-    gap: 0.25em;
+    align-items: center;
+    /* gap: 0.25em; */
 }
 
 @keyframes outline-checked {

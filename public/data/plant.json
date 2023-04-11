@@ -1,0 +1,79 @@
+[
+    {
+        "id": 365728,
+        "tree_type": "American Basswood",
+        "sponsor_id": 7809,
+        "sponsor_name": "Vahid",
+        "bounty": 50
+    },
+    {
+        "id": 1312428,
+        "tree_type": "American Elm",
+        "sponsor_id": 4355,
+        "sponsor_name": "John",
+        "bounty": 32
+    },
+    {
+        "id": 35683247222,
+        "tree_type": "Common Hackberry",
+        "sponsor_id": 7809,
+        "sponsor_name": "Kira",
+        "bounty": 25
+    },
+    {
+        "id": 2745828,
+        "tree_type": "Eastern White Pine",
+        "sponsor_id": 7809,
+        "sponsor_name": "Kira",
+        "bounty": 25
+    },
+    {
+        "id": 1367658,
+        "tree_type": "Honey Locust",
+        "sponsor_id": 7809,
+        "sponsor_name": "Kira",
+        "bounty": 25
+    },
+    {
+        "id": 12657574,
+        "tree_type": "Fig Tree",
+        "sponsor_id": 7809,
+        "sponsor_name": "Kira",
+        "bounty": 25
+    },
+    {
+        "id": 124567,
+        "tree_type": "Long Tree",
+        "sponsor_id": 7809,
+        "sponsor_name": "Kira",
+        "bounty": 25
+    },
+    {
+        "id": 1879879,
+        "tree_type": "Plant Tree",
+        "sponsor_id": 7809,
+        "sponsor_name": "Kira",
+        "bounty": 25
+    },
+    {
+        "id": 154673,
+        "tree_type": "Redbud",
+        "sponsor_id": 7809,
+        "sponsor_name": "Kira",
+        "bounty": 25
+    },
+    {
+        "id": 4567,
+        "tree_type": "Protestant Tree",
+        "sponsor_id": 7809,
+        "sponsor_name": "Kira",
+        "bounty": 25
+    },
+    {
+        "id": 456747,
+        "tree_type": "Shagbark Hickory",
+        "sponsor_id": 7809,
+        "sponsor_name": "Kira",
+        "bounty": 25
+    }
+]

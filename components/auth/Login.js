@@ -11,7 +11,7 @@ const Signup = () => {
             <input className={styles.secondary} placeholder="Password" type="password" name="" id="" />
 
             
-            <Link className={styles.link} href="/main"><input className={styles.submit} type="submit" value="Login" /></Link>
+            <Link className={styles.link} href="/plant"><input className={styles.submit} type="submit" value="Login" /></Link>
             <span className={styles.to_login}>New here? <Link className={styles.link} href="/auth/signup">Sign up</Link></span>
 
         </form>

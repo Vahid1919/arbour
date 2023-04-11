@@ -47,8 +47,8 @@
 
 .map{
 
-    height: 65vh;
-    width: 95vw;
+    height: 50vh;
+    width: 90vw;
 
 }
 
@@ -88,11 +88,12 @@
     }
 
     .map{
-       
-        width: 80vw;
-       
-    }
-}
 
-@import url('https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps.css');
+        height: 60vh;
+        width: 90vw;
+    
+    }
+
+    
+}
 
