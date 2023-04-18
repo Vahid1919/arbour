@@ -5,7 +5,8 @@ This repository contains my project for my Web Application Development class.
 
 ### Phase 1 - Project Proposal - Done
 ### Phase 2 - Frontend
-    Completed HTML And CSS files 
+### Phase 2.2
+    Completed HTML, CSS & Javascript Implementation 
     
 # How to Run this Project
 1. Go to root directory
