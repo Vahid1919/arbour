@@ -7,8 +7,8 @@ const Signup = () => {
         
         <form action="" method="post" className={styles.form}>
             <h1 className={styles.heading}>Sign In</h1>
-            <input className={styles.secondary} placeholder="Email" type="email" name="email" id="" />
-            <input className={styles.secondary} placeholder="Password" type="password" name="" id="" />
+            <input className={styles.secondary} placeholder="Email" type="email" name="email" />
+            <input className={styles.secondary} placeholder="Password" type="password" name="" />
 
             
             <Link className={styles.link} href="/plant"><input className={styles.submit} type="submit" value="Login" /></Link>
