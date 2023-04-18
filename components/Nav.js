@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 
 
-const Nav = ({ currentPage = undefined, setCurrentPage = undefined }) => {
+const Nav = ({ currentPage = undefined}) => {
     const router = useRouter();
     return (
         <div className={styles.nav}>
@@ -12,7 +12,7 @@ const Nav = ({ currentPage = undefined, setCurrentPage = undefined }) => {
 
                 router.push({
                     pathname: '/plant',
-                    query: { page: 'Plant' }
+                    // query: { page: 'Plant' }
                 })
             }
             } className={styles.button_container}>
@@ -28,7 +28,7 @@ const Nav = ({ currentPage = undefined, setCurrentPage = undefined }) => {
 
                 router.push({
                     pathname: '/sponsor',
-                    query: { page: 'Sponsor' }
+                    // query: { page: 'Sponsor' }
                 })
 
 
@@ -46,7 +46,7 @@ const Nav = ({ currentPage = undefined, setCurrentPage = undefined }) => {
 
                 router.push({
                     pathname: '/ongoing',
-                    query: { page: 'Ongoing' }
+                    // query: { page: 'Ongoing' }
                 })
 
 
@@ -65,8 +65,8 @@ const Nav = ({ currentPage = undefined, setCurrentPage = undefined }) => {
             <button onClick={() => {
 
                 router.push({
-                    pathname: '/map-view',
-                    query: { page: 'MapView' }
+                    pathname: '/map',
+                    // query: { page: 'Map' }
                 })
 
 
@@ -74,15 +74,15 @@ const Nav = ({ currentPage = undefined, setCurrentPage = undefined }) => {
             } className={styles.button_container}>
 
                 <div className={styles.nav_icon_two}>
-                    <svg className={currentPage == "MapView" ? styles.svg_current : styles.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M384 476.1L192 421.2V35.9L384 90.8V476.1zm32-1.2V88.4L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3V394.6c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2V423.6L32.9 474.5C17.1 480.8 0 469.2 0 452.2V117.4c0-9.8 6-18.6 15.1-22.3z" /></svg>                  </div>
+                    <svg className={currentPage == "Map" ? styles.svg_current : styles.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M384 476.1L192 421.2V35.9L384 90.8V476.1zm32-1.2V88.4L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3V394.6c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2V423.6L32.9 474.5C17.1 480.8 0 469.2 0 452.2V117.4c0-9.8 6-18.6 15.1-22.3z" /></svg>                  </div>
 
-                <span className={currentPage == "MapView" ? styles.text_current : styles.text}>Map</span>
+                <span className={currentPage == "Map" ? styles.text_current : styles.text}>Map</span>
             </button>
 
             <button onClick={() => {
                 router.push({
                     pathname: '/profile',
-                    query: { page: 'Profile' }
+                    // query: { page: 'Profile' }
                 })
 
 

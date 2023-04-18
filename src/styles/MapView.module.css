@@ -1,14 +1,15 @@
 .main{
     width: 100vw;
-    height: calc(100vh - 25vh);
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;    
-    margin-top: 1em;
+    padding-top: 1em;
     text-align: left;
 
     gap: 1em; 
+    background-color: var(--white);
 }
 
 .description{
@@ -19,35 +20,9 @@
 
 
 
-.button{
-    
-    margin-right: 0.7em;
-    height: 2em;
-    width: 6em;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--black);
-    color: var(--white);
-    font-weight: 400;
-    font-size: small;
-}
-
-.buttons_flex{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-   
-    
-}
-
-.filter{
-    padding-right: 1em;
-}
-
 .map{
 
-    height: 50vh;
+    height: 70vh;
     width: 90vw;
 
 }
@@ -89,7 +64,7 @@
 
     .map{
 
-        height: 60vh;
+        height: 76vh;
         width: 90vw;
     
     }

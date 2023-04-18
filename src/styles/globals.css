@@ -12,7 +12,7 @@
   --dark-green: #477660;
 
   color: var(--black);
-  background-color: var(--white);
+  /* background-color: var(--white);  */
 
 
   font-family: 'Rubik', sans-serif;

@@ -3,9 +3,6 @@ import Header from "../../../components/Header"
 import Nav from "../../../components/Nav"
 
 
-const setCurrentPage = () => {
-    return ""
-}
 
 
 const Sponsor = (plants) => {
@@ -13,7 +10,7 @@ const Sponsor = (plants) => {
 
     return (
         <>
-            <Header page="Arbour" />
+            <Header showCredits = {true} hasNotifications = {false} />
             <form className={styles.main}>
                 <span>
                     <label htmlFor="tree-type" className={styles.label}>Tree Type:</label>
@@ -35,7 +32,7 @@ const Sponsor = (plants) => {
 
 
             </form>
-            <Nav currentPage={"Sponsor"} setCurrentPage={setCurrentPage} />
+            <Nav currentPage={"Sponsor"} />
         </>
 
     )

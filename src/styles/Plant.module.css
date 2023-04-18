@@ -2,15 +2,16 @@
    
 
     width: 100vw;
-    height: calc(100vh - 18vh);
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;    
-    margin-top: 1em;
+    padding-top: 1em;
     gap: 1em;
     padding-bottom: 5em;
     overflow: scroll;
+    background-color: var(--white);
     
 }
 

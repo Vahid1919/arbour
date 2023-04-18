@@ -1,11 +1,13 @@
 import Header from "../../../../components/Header"
 import Signup from "../../../../components/auth/Signup"
+import styles from "@/styles/Auth.module.css"
 
 const index = () => {
+
   return (
-    <div>
-        <Header/>
-        <Signup/>
+    <div className={styles.background}>
+      <Header showCredits={false} hasNotifications={false} />
+      <Signup />
     </div>
   )
 }

@@ -3,14 +3,12 @@ import Nav from "../../../components/Nav"
 import styles from "@/styles/Profile.module.css"
 import Transaction from "../../../components/TransactionCard"
 import { useState } from "react";
-
-const setCurrentPage = () => {
-    return ""
-}
+import { useRouter } from "next/router";
 
 
 const Profile = (props) => {
     const [transactionStart, setTransactionStart] = useState(false);
+    const router = useRouter();
 
     return (
         <>
@@ -52,11 +50,16 @@ const Profile = (props) => {
 
 
 
-                <button className={styles.button_logout}>Logout</button>
+                <button onClick={() => {
+                    router.push({
+                        pathname: '/',
+                        // query: { page: 'Ongoing' }
+                    })
+                }} className={styles.button_logout}>Logout</button>
             </div>
             {transactionStart === true ? <Transaction transactionStart={transactionStart} setTransactionStart={setTransactionStart} /> : <></>}
             {/* <Transaction/> */}
-            <Nav currentPage={"Profile"} setCurrentPage={setCurrentPage} />
+            <Nav currentPage={"Profile"} />
         </>
 
     )

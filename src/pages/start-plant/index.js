@@ -4,7 +4,7 @@ import styles from "@/styles/StartPlant.module.css"
 
 const index = () => {
     return (
-        <div>
+        <div className={styles.main}>
 
             <Header />
             <h3 className={styles.title}>Verification Steps</h3>
@@ -19,7 +19,7 @@ const index = () => {
                 <p className={styles.steps}><b>Step 4:</b> Wait for verification; <b>Get Paid</b> </p>
             </section>
 
-            <Nav />
+            <Nav currentPage = "Ongoing" />
         </div>
     )
 }

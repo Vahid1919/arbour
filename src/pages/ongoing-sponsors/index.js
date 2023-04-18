@@ -7,7 +7,7 @@ const index = () => {
     return (
         <div>
 
-            <Header />
+            <Header showCredits = {true} hasNotifications = {false} />
             <div className={styles.main}>
                 <Card buttonText="Verify"/>
             </div>

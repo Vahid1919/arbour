@@ -1,11 +1,12 @@
 .main{
     width: 100vw;
-    height: calc(100vh - 25vh);
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     gap: 3em;
-    margin-top: 2em;
+    padding-top: 2em;
+    background-color: var(--white);
 }
 
 .profile_image{
@@ -85,6 +86,7 @@
 
     margin-top: auto;
     margin-right: 0.7em;
+    margin-bottom: 3em;
     height: 3em;
     width: 8em;
     border: none;

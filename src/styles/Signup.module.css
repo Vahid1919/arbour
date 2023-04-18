@@ -12,7 +12,6 @@
     justify-content: center;
     align-items: center;
 
-    background-color: var(--white);
   
     
 
@@ -25,6 +24,8 @@
     padding-bottom: 0.5em;
     font-weight: 200;
     font-family: "Rubik", sans-serif;
+    color: var(--white);
+    font-weight: 400;
 
 
 }
@@ -35,7 +36,7 @@
     height: max-content;
     width: 86%;
     margin: 0;
-    background-color: var(--white);
+    /* background-color: var(--white); */
 
 }
 
@@ -84,12 +85,17 @@
     margin-bottom: 1em;
 
     font-size: small;
-    color: var(--black)
+    color: var(--white)
 
 }
 
 .link{
-    color: var(--dark-green);
+    color: var(--black);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--light-green);
     text-decoration: none;
 }
 

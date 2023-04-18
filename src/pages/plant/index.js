@@ -4,23 +4,19 @@ import Header from "../../../components/Header"
 import Nav from "../../../components/Nav"
 
 
-const setCurrentPage = ( ) => {
-    return ""
-}
 
-
-const Plant = (plants) => {
+const Plant = ({plants}) => {
 
   
   return (
     <>
-        <Header page="Arbour"/>
+        <Header showCredits = {true} hasNotifications = {false} />
         <div className={styles.main}>          
-        {plants.plants.map((plant) => (
-          <Card treeType = {plant.tree_type} sponsor= {plant.sponsor_name} bounty = {plant.bounty} buttonText = "Plant"/>
+        {plants.map((plant) => (
+          <Card key = {plant.id} treeType = {plant.tree_type} sponsor= {plant.sponsor_name} bounty = {plant.bounty} buttonText = "Claim"/>
         ))}
         </div>
-        <Nav currentPage={"Plant"} setCurrentPage = {setCurrentPage}/>
+        <Nav currentPage={"Plant"}/>
     </>
     
   )
@@ -31,8 +27,8 @@ const Plant = (plants) => {
 export default Plant
 
 export const getStaticProps = async () => {
-  console.log("started get static props")
-  const res = await fetch('https://mocki.io/v1/811958f6-49b1-4245-ac17-3ee02b3ce9cc')
+  console.log("started plant get static props")
+  const res = await fetch('https://mocki.io/v1/f7e67dd2-ea66-4d82-b07a-14d2426516a5')
   const plants = await res.json()
   return {
     props: {

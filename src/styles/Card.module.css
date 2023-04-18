@@ -30,6 +30,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: var(--white);
 }
 
 .sponsor_span{
