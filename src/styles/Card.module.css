@@ -1,101 +1,92 @@
-.card_container{
-    background-color: var(--white);
-    color: var(--black);
+.card_container {
+  background-color: var(--white);
+  color: var(--black);
 
-    height: 17vh;
-    width: 90vw;
+  height: 17vh;
+  width: 90vw;
 
+  display: flex;
+  position: relative;
 
-    display: flex;
-    position: relative;
-
-    border-bottom: 1px solid rgb(195, 195, 195);
-    
+  border-bottom: 1px solid rgb(195, 195, 195);
 }
 
-.tree_img{
-    width: 30%;
-    height: auto;
-    object-fit: cover;
-    margin: 0.7em;
-    border-radius: 5px;
+.tree_img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  margin: 0.7em;
+  border-radius: 5px;
 }
 
-.tree_type{
-    font-weight: 400;
+.tree_type {
+  font-weight: 400;
 }
 
-.inner_flex{
-    margin-top: 0.7em;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white);
+.inner_flex {
+  margin-top: 0.7em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
 }
 
-.sponsor_span{
-    font-size: small;
-    padding-bottom: 0.5em;
+.sponsor_span {
+  font-size: small;
+  padding-bottom: 0.5em;
 }
 
-.sponsor_link{
-    color: var(--dark-green);
-    text-decoration: none;
-
+.sponsor_link {
+  color: var(--dark-green);
+  text-decoration: none;
 }
 
-.bottom_desc{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0.7em 0.7em 0.7em 0;
-    
+.bottom_desc {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0.7em 0.7em 0.7em 0;
 }
 
-.button{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-right: 0.7em;
-    height: 3em;
-    width: 8em;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--black);
-    color: var(--white);
-    font-weight: 800;
+.button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-right: 0.7em;
+  height: 3em;
+  width: 8em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: 800;
 }
 
-.button:hover{
-
-    background-color: var(--dark-green);
-    color: var(--white);
-
+.button:hover {
+  background-color: var(--dark-green);
+  color: var(--white);
 }
 
-.svg{
-    height: 1em;
-    margin-right: 0.4em;
-    
-    fill: var(--dark-green);
+.svg {
+  height: 1em;
+  margin-right: 0.4em;
+
+  fill: var(--dark-green);
 }
 
-.token_value_container{
-    display: flex;
-    height: 100%;
-    align-items: center;
+.token_value_container {
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 @media (min-width: 600px) {
-    .button{
-        
-        height: 4em;
-        width: 10em;
-        
-    }
+  .button {
+    height: 4em;
+    width: 10em;
+  }
 
-    .card_container{
-        width: 40vw;
-    }
-    
+  .card_container {
+    width: 40vw;
+  }
 }

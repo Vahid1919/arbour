@@ -11,6 +11,7 @@ const Ongoing = ({plants, sponsors}) => {
 
 
     const [mode, setMode] = useState("plant")
+    
     const onOptionChange = e => {
         setMode(e.target.value)
         console.log(`mode changed to ${e.target.value}`)

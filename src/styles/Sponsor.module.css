@@ -1,59 +1,49 @@
-.main{
-    width: 100vw;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;    
-    padding: 1em;
-    gap: 3em;
-    background-color: var(--white);
+.main {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 3em;
+  background-color: var(--white);
 }
 
-.button{
-    
-  
-    margin-right: 0.7em;
-    height: 3em;
-    width: 8em;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--black);
-    color: var(--white);
-    font-weight: 800;
-    font-size: large;
+.button {
+  margin-right: 0.7em;
+  height: 3em;
+  width: 8em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: 800;
+  font-size: large;
 }
 
-.button:hover{
-
-    background-color: var(--dark-green);
-    color: var(--white);
-
+.button:hover {
+  background-color: var(--dark-green);
+  color: var(--white);
 }
 
-.select{
-    height: 3em;
-    width: 15em;
-    margin-left: 2em;
-    padding-left: 1em;
-    font-weight: 100;
-    border: 2px solid grey;
-    border-radius: 5px;
-
+.select {
+  height: 3em;
+  width: 15em;
+  margin-left: 2em;
+  padding-left: 1em;
+  font-weight: 100;
+  border: 2px solid grey;
+  border-radius: 5px;
 }
 
 @media (min-width: 600px) {
-    .select{
-      
-        width: 40vw;
-        font-size: large;
-        
-    
-    }
+  .select {
+    width: 40vw;
+    font-size: large;
+  }
 
-    .label{
-  
-        font-size: x-large;
-    }
-    
+  .label {
+    font-size: x-large;
+  }
 }

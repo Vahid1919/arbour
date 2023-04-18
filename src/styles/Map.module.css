@@ -1,6 +1,6 @@
-.map{
-    /* color: var(--black); */
-    /* position: relative; */
-    cursor: pointer;
-    overflow: scroll;
+.map {
+  /* color: var(--black); */
+  /* position: relative; */
+  cursor: pointer;
+  overflow: scroll;
 }
