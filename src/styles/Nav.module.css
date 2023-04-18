@@ -14,6 +14,7 @@
   font-size: small;
 
   background-color: var(--white);
+  overflow: hidden;
 }
 
 .text {
