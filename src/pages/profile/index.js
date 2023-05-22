@@ -2,11 +2,23 @@ import Header from "../../../components/Header"
 import Nav from "../../../components/Nav"
 import styles from "@/styles/Profile.module.css"
 import Transaction from "../../../components/TransactionCard"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Router from "next/router"
+import { useSession, signOut } from "next-auth/react"
 
 
 const Profile = (props) => {
+    const { status, data } = useSession()
+    useEffect(() => {
+        if (status === "unauthenticated"){
+            Router.replace("/auth/login")
+        } 
+
+    }, [status])
+
+    console.log([status, data])
+
     const [transactionStart, setTransactionStart] = useState(false);
     const router = useRouter();
 
@@ -51,14 +63,15 @@ const Profile = (props) => {
 
 
                 <button onClick={() => {
-                    router.push({
-                        pathname: '/',
-                        // query: { page: 'Ongoing' }
-                    })
+                    // router.push({
+                    //     pathname: '/',
+                    //     // query: { page: 'Ongoing' }
+                    // })
+
+                    signOut()
                 }} className={styles.button_logout}>Logout</button>
             </div>
             {transactionStart === true ? <Transaction transactionStart={transactionStart} setTransactionStart={setTransactionStart} /> : <></>}
-            {/* <Transaction/> */}
             <Nav currentPage={"Profile"} />
         </>
 

@@ -2,12 +2,22 @@ import styles from "@/styles/Ongoing.module.css"
 import Card from "../../../components/Card"
 import Header from "../../../components/Header"
 import Nav from "../../../components/Nav"
-
-import { useState } from "react"
+import { useState, useEffect } from "react";
+import Router from "next/router"
+import { useSession } from "next-auth/react"
 
 
 
 const Ongoing = ({plants, sponsors}) => {
+    const { status, data } = useSession()
+    useEffect(() => {
+        if (status === "unauthenticated"){
+            Router.replace("/auth/login")
+        } 
+
+    }, [status])
+
+    console.log([status, data])
 
 
     const [mode, setMode] = useState("plant")

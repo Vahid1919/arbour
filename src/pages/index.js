@@ -1,16 +1,28 @@
-import Header from "../../components/Header"
-import Signup from "../../components/auth/Signup"
-import styles from "@/styles/Auth.module.css"
+import { useEffect } from "react"
+import { useSession } from "next-auth/react"
+import Router from "next/router"
 
 
 
-export default function Home() {
+const Index = () => {
+    const { status, data } = useSession()
+    useEffect(() => {
+        if (status === "authenticated"){
+            Router.replace("/plant/")
+        }else{
+          Router.replace("/auth/login/")
+        }
 
+    }, [status])
+  
   return (
-    <div className={styles.background}>
-      <Header showCredits = {false} hasNotifications = {false} />
-      <Signup/>
-    </div>
+    <>
+        Loading
+    </>
+    
   )
 }
 
+
+
+export default Index

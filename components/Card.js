@@ -1,11 +1,8 @@
 import styles from "@/styles/Card.module.css"
-import Link from 'next/link'
 
-const Card = ({treeType = "General", sponsor= "Sponsor", bounty = 0, buttonText = "Plant"}) => {
+const Card = ({id = null, treeType = "General", sponsor= "Sponsor", bounty = 0, buttonText = "Plant", clickHandler = null}) => {
   return (
     <div className={styles.card_container}>
-        {/* <img className={styles.tree_img} src="https://picsum.photos/200" alt="image of tree" /> */}
-
         <div className={styles.inner_flex}>
             <div className={styles.top_desc}>
                 <h2 className={styles.tree_type}>{treeType}</h2>
@@ -18,12 +15,7 @@ const Card = ({treeType = "General", sponsor= "Sponsor", bounty = 0, buttonText 
                   {bounty}
                   </span>
 
-                  {
-                  buttonText === "Verify" ?
-                  <Link className={styles.link} href="/start-verification"><button className={styles.button}>{buttonText}</button></Link>
-                  :
-                  <Link className={styles.link} href="/start-plant"><button className={styles.button}>{buttonText}</button></Link>
-                  }
+                  <button onClick={() => clickHandler(id)} className={styles.button}>{buttonText}</button>
                   
 
                 

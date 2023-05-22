@@ -3,10 +3,22 @@ import Header from "../../../components/Header"
 import Nav from "../../../components/Nav"
 import Image from 'next/image'
 import ReactMapGL, { Marker } from "react-map-gl";
+import { useEffect } from "react";
+import Router from "next/router"
+import { useSession} from "next-auth/react"
 
 
 
 const Map = ({ trees }) => {
+  const { status, data } = useSession()
+    useEffect(() => {
+        if (status === "unauthenticated"){
+            Router.replace("/auth/login")
+        } 
+
+    }, [status])
+
+    console.log([status, data])
 
 
   return (

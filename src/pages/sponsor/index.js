@@ -1,12 +1,22 @@
 import styles from "@/styles/Sponsor.module.css"
 import Header from "../../../components/Header"
 import Nav from "../../../components/Nav"
+import { useEffect } from "react";
+import Router from "next/router"
+import { useSession, signOut } from "next-auth/react"
 
 
 
+const Sponsor = () => {
+    const { status, data } = useSession()
+    useEffect(() => {
+        if (status === "unauthenticated"){
+            Router.replace("/auth/login")
+        } 
 
-const Sponsor = (plants) => {
-    console.log(plants)
+    }, [status])
+
+    console.log([status, data])
 
     return (
         <>
