@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useSession, signIn } from "next-auth/react"
 import Router from "next/router"
 import styles from "@/styles/Auth.module.css"
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect} from 'react';
 
 
 const index = () => {

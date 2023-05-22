@@ -9,6 +9,7 @@ import Router from "next/router"
 
 
 const Plant = ({plants}) => {
+  console.log(plants.results)
 
   const {status, data} = useSession()
   useEffect(() => {
@@ -31,8 +32,8 @@ const Plant = ({plants}) => {
       <>
           <Header showCredits = {true} hasNotifications = {false} />
           <div className={styles.main}>          
-          {plants.map((plant) => (
-            <Card key = {plant.id} id = {plant.id} treeType = {plant.tree_type} sponsor= {plant.sponsor_name} bounty = {plant.bounty} clickHandler = {makeClaim} buttonText = "Claim"/>
+          {plants.results.map((plant) => (
+            <Card key = {plant.id} id = {plant.id} treeType = {plant.plant_name} sponsor= {plant.sponsor_id} bounty = {plant.bounty_amount} clickHandler = {makeClaim} buttonText = "Claim"/>
           ))}
           </div>
           <Nav currentPage={"Plant"}/>
@@ -49,10 +50,13 @@ const Plant = ({plants}) => {
 
 export default Plant
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   console.log("started plant get static props")
-  const res = await fetch('https://mocki.io/v1/f7e67dd2-ea66-4d82-b07a-14d2426516a5')
+  const res = await fetch('http://localhost:3000/api/getPlants')
   const plants = await res.json()
+  console.log(plants)
+  console.log("from server")
+
   return {
     props: {
       plants
