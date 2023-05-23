@@ -5,6 +5,7 @@ import Nav from "../../../components/Nav"
 import { useState, useEffect } from "react"
 import { useSession } from "next-auth/react"
 import Router from "next/router"
+import Link from "next/link"
 
 
 
@@ -29,15 +30,16 @@ const Plant = ({plants}) => {
   
   if (status === "authenticated"){
     return (
-      <>
+      <div>
           <Header showCredits = {true} hasNotifications = {false} />
           <div className={styles.main}>          
           {plants.results.map((plant) => (
-            <Card key = {plant.id} id = {plant.id} treeType = {plant.plant_name} sponsor= {plant.sponsor_id} bounty = {plant.bounty_amount} clickHandler = {makeClaim} buttonText = "Claim"/>
+            <Link href="/start-plant"> <Card key = {plant.id} id = {plant.id} treeType = {plant.plant_name} sponsor= {plant.sponsor_id} bounty = {plant.bounty_amount} clickHandler = {makeClaim} buttonText = "Claim"/></Link>
           ))}
           </div>
           <Nav currentPage={"Plant"}/>
-      </>
+     </div>
+  
       
     )
   }

@@ -15,7 +15,7 @@ const Card = ({id = null, treeType = "General", sponsor= "Sponsor", bounty = 0, 
                   {bounty}
                   </span>
 
-                  <button onClick={() => clickHandler(id)} className={styles.button}>{buttonText}</button>
+                  <button className={styles.button}>{buttonText}</button>
                   
 
                 

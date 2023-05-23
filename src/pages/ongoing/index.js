@@ -5,6 +5,7 @@ import Nav from "../../../components/Nav"
 import { useState, useEffect } from "react";
 import Router from "next/router"
 import { useSession } from "next-auth/react"
+import Link from "next/link"
 
 
 
@@ -50,11 +51,11 @@ const Ongoing = ({plants, sponsors}) => {
                     {
                         mode === "plant" ?
                         plants.map((plant) => (
-                            <Card key={plant.id} treeType={plant.tree_type} sponsor={plant.sponsor_name} bounty={plant.bounty} buttonText="Plant" />
+                            <Link href="/start-plant"><Card key={plant.id} treeType={plant.tree_type} sponsor={plant.sponsor_name} bounty={plant.bounty} buttonText="Plant" /></Link>
                         ))
                         :
                         sponsors.map((plant) => (
-                            <Card key={plant.id} treeType={plant.tree_type} sponsor={plant.sponsor_name} bounty={plant.bounty} buttonText="Verify" />
+                            <Link href="/start-verification"><Card key={plant.id} treeType={plant.tree_type} sponsor={plant.sponsor_name} bounty={plant.bounty} buttonText="Verify" /></Link>
                         ))
 
 
